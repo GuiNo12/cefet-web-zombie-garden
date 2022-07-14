@@ -1,6 +1,7 @@
 @import url(fontes.css);
 
-html, body {
+html,
+body {
   min-height: 100vh;
 }
 
@@ -21,11 +22,11 @@ body {
   font-family: 'Lakki Reddy', cursive;
 }
 
-.logo > .primary-logo-color {
+.logo>.primary-logo-color {
   color: var(--cor-logo-1);
 }
 
-.logo > .secondary-logo-color {
+.logo>.secondary-logo-color {
   color: var(--cor-logo-2);
 }
 
@@ -45,7 +46,7 @@ fieldset {
   border: 1px solid var(--cor-bordas);
   border-radius: 5px;
   padding: 1em;
-  margin: 2em auto;  
+  margin: 2em auto;
 }
 
 legend {
@@ -122,7 +123,7 @@ h3 {
   margin: 0;
 }
 
-#statistics-title + hr {
+#statistics-title+hr {
   margin-top: 4px;
 }
 
@@ -153,11 +154,23 @@ h3 {
 }
 
 @keyframes vanishing-down {
-  from { left: 0; opacity: 1; }
-  to   { left: 30px; opacity: 0; }
+  from {
+    left: 0;
+    opacity: 1;
+  }
+
+  to {
+    left: 30px;
+    opacity: 0;
+  }
 }
 
 @keyframes floating {
-  from { transform: scale(1); }
-  to   { transform: scale(1.1); }
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
 }

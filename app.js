@@ -23,10 +23,12 @@ import zombies from './routes/zombies.js'
 
 
 const app = express()
-const __dirname = new URL('.', import.meta.url).pathname
+let __dirname = new URL('.', import.meta.url).pathname
+//retirar primeira / do caminho em __dirname
+__dirname = __dirname.substring(1);
 
 // configura a pasta que contém as views e o handlebars como templating engine
-app.set('views', `${__dirname}/views`)
+app.set('views', `${__dirname}views`)
 app.set('view engine', 'hbs')
 hbs.registerPartials(`${__dirname}/views/partials`, console.error)
 app.set('json spaces', 2);
